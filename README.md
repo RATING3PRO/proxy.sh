@@ -1,5 +1,25 @@
 # proxy.sh
 
+## BBR enable/disable
+
+enable
+
+```bash
+sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/bbr.sh) enable
+```
+
+disable
+
+```bash
+sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/bbr.sh) disable
+```
+
+status
+
+```bash
+sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/bbr.sh) status
+```
+
 ## VLESS + REALITY + XTLS-RPRX-Vision
 
 ### alpine
