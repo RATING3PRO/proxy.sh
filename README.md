@@ -3,17 +3,27 @@
 ## VLESS + REALITY + XTLS-RPRX-Vision
 
 ### alpine
+
+install
+
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/refs/heads/main/alpine-vless-reality-xtls-rprx-vision.sh)
 ```
+
+uninstall
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/refs/heads/main/alpine-vless-reality-xtls-rprx-vision.sh) uninstall
 ```
 ### Ubuntu / Debian
+
+install
+
 ```bash
 sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/ubuntu-vless-reality-xtls-rprx-vision.sh)
 ```
+
+uninstall
 
 ```bash
 sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/ubuntu-vless-reality-xtls-rprx-vision.sh) uninstall
@@ -21,9 +31,13 @@ sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/mai
 
 ### RedHat / CentOS / Alma / Rocky / Oracle
 
+install
+
 ```bash
 sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/redhat-vless-reality-xtls-rprx-vision.sh)
 ```
+
+uninstall
 
 ```bash
 sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/redhat-vless-reality-xtls-rprx-vision.sh) uninstall
