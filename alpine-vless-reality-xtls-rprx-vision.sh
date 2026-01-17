@@ -68,23 +68,20 @@ gen_keys() {
   log "生成 REALITY x25519 密钥"
 
   local out
-  out="$($XRAY_BIN x25519 2>&1)"
+  out="$($XRAY_BIN x25519)"
 
-  PRIV="$(echo "$out" | grep 'Private key' | cut -d':' -f2 | tr -d '[:space:]')"
-  PUB="$(echo "$out"  | grep 'Public key'  | cut -d':' -f2 | tr -d '[:space:]')"
+  PRIV="$(echo "$out" | grep '^PrivateKey:' | cut -d':' -f2 | tr -d '[:space:]')"
+  PUB="$(echo "$out"  | grep '^Password:'   | cut -d':' -f2 | tr -d '[:space:]')"
 
   if [[ -z "$PRIV" || -z "$PUB" ]]; then
-    err "REALITY 密钥生成失败"
-    err "xray x25519 输出如下："
-    echo "--------------------------------"
+    err "REALITY 密钥解析失败"
+    echo "xray x25519 输出："
     echo "$out"
-    echo "--------------------------------"
     exit 1
   fi
 
-  log "REALITY 公钥生成成功"
+  log "REALITY 密钥生成成功"
 }
-
 
 write_config() {
   cat >"$XRAY_CONF" <<EOF
