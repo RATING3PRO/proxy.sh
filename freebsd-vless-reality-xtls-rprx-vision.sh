@@ -12,10 +12,13 @@ XRAY_CONF="${XRAY_DIR}/config.json"
 XRAY_LOG="/var/log/xray"
 RC_SCRIPT="/usr/local/etc/rc.d/xray"
 
+# ==========================================
+# 可按需修改
 DEFAULT_PORT=8443
 DEFAULT_SNI="www.cloudflare.com"
 DEFAULT_DEST="www.cloudflare.com:443"
 DEFAULT_TAG="vless-reality"
+# ==========================================
 
 log() { echo "[INFO] $*"; }
 err() { echo "[ERROR] $*" >&2; }
