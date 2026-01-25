@@ -62,3 +62,17 @@ uninstall
 ```bash
 sudo bash <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/redhat-vless-reality-xtls-rprx-vision.sh) uninstall
 ```
+
+### FreeBSD
+
+install
+
+```sh
+sudo sh <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/freebsd-vless-reality-xtls-rprx-vision.sh)
+```
+
+uninstall
+
+```sh
+sudo sh <(curl -fsSL https://raw.githubusercontent.com/RATING3PRO/proxy.sh/main/freebsd-vless-reality-xtls-rprx-vision.sh) uninstall
+```
